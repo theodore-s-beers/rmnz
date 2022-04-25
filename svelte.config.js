@@ -12,6 +12,10 @@ const config = {
 
 		prerender: {
 			default: true
+		},
+
+		paths: {
+			base: '/rmnz'
 		}
 	}
 };
