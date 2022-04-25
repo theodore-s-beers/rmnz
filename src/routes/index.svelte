@@ -18,21 +18,23 @@
 
 <h1 class="text-3xl mb-4">Persian romanization examples</h1>
 
-<table class="divide-y-2 divide-gray-400 text-lg">
+<table class="table-auto divide-y-2 divide-gray-400 text-lg">
 	<thead class="font-bold bg-blue-400/25">
 		<tr>
 			<th class="px-4 py-2 border-r border-gray-400">Orig.</th>
 			<th class="px-4 border-r border-gray-400">DMG</th>
 			<th class="px-4 border-r border-gray-400">EIr</th>
 			<th class="px-4 border-r border-gray-400">IJMES</th>
-			<th>LOC</th>
+			<th class="px-4">LOC</th>
 		</tr>
 	</thead>
 
 	<tbody class="divide-y divide-gray-400">
 		{#each words as word}
-			<tr class="">
-				<td class="px-4 py-2 text-2xl border-r border-gray-400 font-persian"
+			<tr>
+				<td
+					dir="rtl"
+					class="px-4 py-2 text-2xl border-r border-gray-400 font-persian text-center"
 					>{word.orig}</td
 				>
 				<td class="px-4 border-r border-gray-400">{word.romanizations.dmg}</td>
