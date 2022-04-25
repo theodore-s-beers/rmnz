@@ -21,7 +21,7 @@
 <table class="divide-y-2 divide-gray-400 text-lg">
 	<thead class="font-bold bg-blue-400/25">
 		<tr>
-			<th class="px-4 py-2 border-r border-gray-400">Original</th>
+			<th class="px-4 py-2 border-r border-gray-400">Orig.</th>
 			<th class="px-4 border-r border-gray-400">DMG</th>
 			<th class="px-4 border-r border-gray-400">EIr</th>
 			<th class="px-4 border-r border-gray-400">IJMES</th>
