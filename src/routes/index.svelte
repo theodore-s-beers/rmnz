@@ -33,7 +33,7 @@
 		{#each words as word}
 			<tr>
 				<td
-					dir="rtl"
+					lang="ar"
 					class="px-4 py-2 text-2xl border-r border-gray-400 font-persian text-center"
 					>{word.orig}</td
 				>
