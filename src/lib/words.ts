@@ -1,4 +1,20 @@
-const wordsJson = {
+interface Romanizations {
+	dmg: string;
+	eir: string;
+	ijmes: string;
+	loc: string;
+}
+
+interface Word {
+	orig: string;
+	romanizations: Romanizations;
+}
+
+interface WordsObject {
+	[orig: string]: Romanizations;
+}
+
+const wordsObj: WordsObject = {
 	محمد: {
 		dmg: 'muḥammad',
 		eir: 'moḥammad',
@@ -32,19 +48,7 @@ const wordsJson = {
 	}
 };
 
-interface Romanizations {
-	dmg: string;
-	eir: string;
-	ijmes: string;
-	loc: string;
-}
-
-interface Word {
-	orig: string;
-	romanizations: Romanizations;
-}
-
-export const words: Word[] = Object.entries(wordsJson)
+export const words: Word[] = Object.entries(wordsObj)
 	.map(([orig, romanizations]) => ({
 		orig,
 		romanizations

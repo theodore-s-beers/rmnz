@@ -2,7 +2,7 @@ module.exports = {
 	content: ['src/**/*.{html,js,svelte,ts}'],
 	theme: {
 		fontFamily: {
-			noto: ['Gentium Basic', 'Noto Serif', 'serif'],
+			gentium: ['Gentium Plus', 'serif'],
 			persian: ['Scheherazade New', 'serif']
 		}
 	},
