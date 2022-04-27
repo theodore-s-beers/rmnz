@@ -1,5 +1,5 @@
 ---
-title: IJMES Transliteration Guidelines
+title: IJMES Translation and Transliteration Guidelines
 mainfont: Brill
 mainfontoptions:
   - Numbers=Lining
