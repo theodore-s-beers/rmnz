@@ -20,7 +20,7 @@
 		const res = await fetch(`/rmnz/words.json`);
 		const parsed: WordsObject = await res.json();
 
-		words = Object.entries(parsed).sort((a, b) => a[0].localeCompare(b[0]));
+		words = Object.entries(parsed);
 		loaded = true;
 	});
 </script>
