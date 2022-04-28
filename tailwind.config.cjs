@@ -1,9 +1,14 @@
 module.exports = {
 	content: ['src/**/*.{html,js,svelte,ts}'],
 	theme: {
-		fontFamily: {
-			gentium: ['Gentium Plus', 'serif'],
-			persian: ['Scheherazade New', 'serif']
+		extend: {
+			fontFamily: {
+				gentium: ['Gentium Plus', 'serif'],
+				persian: ['Scheherazade New', 'serif']
+			},
+			screens: {
+				anyfine: { raw: '(any-pointer: fine)' }
+			}
 		}
 	},
 	plugins: []
