@@ -26,6 +26,10 @@
 </script>
 
 <svelte:head>
+	<meta
+		name="description"
+		content="Examples of Persian words, romanized according to different standards"
+	/>
 	<title>Persian romanization examples</title>
 </svelte:head>
 
@@ -35,7 +39,7 @@
 
 <div class:hidden={!loaded}>
 	<p class="text-lg mb-4">
-		There are <code class="text-pink-600">{words.length}</code> words so far. A search function
+		There are <code class="text-rose-700">{words.length}</code> words so far. A search function
 		will be added soon.
 	</p>
 
