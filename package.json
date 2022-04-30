@@ -16,7 +16,7 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-static": "^1.0.0-next.29",
-		"@sveltejs/kit": "^1.0.0-next.323",
+		"@sveltejs/kit": "^1.0.0-next.324",
 		"@typescript-eslint/eslint-plugin": "^5.21.0",
 		"@typescript-eslint/parser": "^5.21.0",
 		"autoprefixer": "^10.4.5",
@@ -24,14 +24,14 @@
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte3": "^3.4.1",
 		"gh-pages": "github:theodore-s-beers/gh-pages",
-		"postcss": "^8.4.12",
+		"postcss": "^8.4.13",
 		"prettier": "^2.6.2",
 		"prettier-plugin-svelte": "^2.7.0",
-		"svelte": "^3.47.0",
+		"svelte": "^3.48.0",
 		"svelte-check": "^2.7.0",
 		"svelte-preprocess": "^4.10.6",
 		"tailwindcss": "^3.0.24",
 		"tslib": "^2.4.0",
-		"typescript": "~4.6.3"
+		"typescript": "~4.6.4"
 	}
 }
