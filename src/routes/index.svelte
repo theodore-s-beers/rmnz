@@ -30,6 +30,7 @@
 		name="description"
 		content="Examples of Persian words, romanized according to different standards"
 	/>
+	<meta name="twitter:title" content="Persian romanization examples" />
 	<title>Persian romanization examples</title>
 </svelte:head>
 
