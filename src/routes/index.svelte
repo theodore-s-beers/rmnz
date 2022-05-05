@@ -5,6 +5,7 @@
 		dmg: string;
 		eir: string;
 		ijmes: string;
+		ijmesd: string;
 		loc: string;
 	}
 
@@ -60,6 +61,7 @@
 					class="px-4 border-r border-gray-400 font-normal text-blue-700 anyfine:hover:underline"
 					><a href="/rmnz/docs/ijmes-full.pdf">IJMES</a></th
 				>
+				<th class="px-4 border-r border-gray-400 font-normal">IJMES-D</th>
 				<th class="px-4 font-normal text-blue-700 anyfine:hover:underline"
 					><a href="/rmnz/docs/loc.pdf">LOC</a></th
 				>
@@ -77,6 +79,7 @@
 					<td class="px-4 border-r border-gray-400">{roms.dmg}</td>
 					<td class="px-4 border-r border-gray-400">{roms.eir}</td>
 					<td class="px-4 border-r border-gray-400">{roms.ijmes}</td>
+					<td class="px-4 border-r border-gray-400">{roms.ijmesd}</td>
 					<td class="px-4">{roms.loc}</td>
 				</tr>
 			{/each}
