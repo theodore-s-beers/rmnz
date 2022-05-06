@@ -5,7 +5,7 @@
 		dmg: string;
 		eir: string;
 		ijmes: string;
-		ijmesd: string;
+		ijmesD: string;
 		loc: string;
 	}
 
@@ -79,7 +79,7 @@
 					<td class="px-4 border-r border-gray-400">{roms.dmg}</td>
 					<td class="px-4 border-r border-gray-400">{roms.eir}</td>
 					<td class="px-4 border-r border-gray-400">{roms.ijmes}</td>
-					<td class="px-4 border-r border-gray-400">{roms.ijmesd}</td>
+					<td class="px-4 border-r border-gray-400">{roms.ijmesD}</td>
 					<td class="px-4">{roms.loc}</td>
 				</tr>
 			{/each}
