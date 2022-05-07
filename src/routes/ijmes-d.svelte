@@ -9,7 +9,7 @@
 
 <div class="max-w-3xl mx-auto text-lg">
 	<p class="mb-3">
-		<a href="/rmnz/" class="text-blue-700 anyfine:hover:underline">Back home</a>
+		<a href="/rmnz" class="text-blue-700 anyfine:hover:underline">Back home</a>
 	</p>
 
 	<div class="space-y-4">
