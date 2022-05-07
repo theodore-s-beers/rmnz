@@ -94,7 +94,10 @@
 					class="px-4 border-r border-gray-400 font-normal text-blue-700 anyfine:hover:underline"
 					><a href="/rmnz/docs/ijmes-full.pdf">IJMES</a></th
 				>
-				<th class="px-4 border-r border-gray-400 font-normal">IJMES-D</th>
+				<th
+					class="px-4 border-r border-gray-400 font-normal text-blue-700 anyfine:hover:underline"
+					><a href="/rmnz/ijmes-d/">IJMES-D</a></th
+				>
 				<th class="px-4 font-normal text-blue-700 anyfine:hover:underline"
 					><a href="/rmnz/docs/loc.pdf">LOC</a></th
 				>
