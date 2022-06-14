@@ -43,12 +43,12 @@
 	<title>Persian romanization examples</title>
 </svelte:head>
 
-<h1 class="text-3xl mb-4">Persian romanization examples</h1>
+<h1 class="mb-4 text-3xl">Persian romanization examples</h1>
 
 <p class="mb-4 text-lg" class:hidden={loaded}><em>Loading words…</em></p>
 
 <div class:hidden={!loaded}>
-	<p class="text-lg mb-3">
+	<p class="mb-3 text-lg">
 		In total, there are <code class="text-rose-700">{words.length}</code> words so far. You
 		can search for specific patterns below.
 	</p>
@@ -58,10 +58,10 @@
 		alt="Magnifying glass icon"
 		height="20"
 		width="20"
-		class="absolute ml-2.5 mt-2.5 pointer-events-none"
+		class="pointer-events-none absolute ml-2.5 mt-2.5"
 	/><input
 		id="search-box"
-		class="border border-solid border-gray-400 mb-6 rounded text-lg pl-9 pr-8 py-1 w-80 placeholder-gray-500"
+		class="mb-6 w-80 rounded border border-solid border-gray-400 py-1 pl-9 pr-8 text-lg placeholder-gray-500"
 		placeholder="Search words"
 		bind:value={searchTerm}
 		on:keydown={handleSearch}
@@ -79,26 +79,26 @@
 	>
 
 	<table class="table-auto divide-y-2 divide-gray-400 text-lg">
-		<thead class="text-xl bg-blue-300/25">
+		<thead class="bg-blue-300/25 text-xl">
 			<tr>
-				<th class="px-3 py-2 border-r border-gray-400 font-normal">Orig.</th>
+				<th class="border-r border-gray-400 px-3 py-2 font-normal">Orig.</th>
 				<th
-					class="px-3 border-r border-gray-400 font-normal text-blue-700 anyfine:hover:underline"
+					class="border-r border-gray-400 px-3 font-normal text-blue-700 anyfine:hover:underline"
 					><a href="/rmnz/docs/dmg.pdf">DMG</a></th
 				>
 				<th
-					class="px-3 border-r border-gray-400 font-normal text-blue-700 anyfine:hover:underline"
+					class="border-r border-gray-400 px-3 font-normal text-blue-700 anyfine:hover:underline"
 					><a href="/rmnz/docs/eir.pdf">EIr</a></th
 				>
 				<th
-					class="px-3 border-r border-gray-400 font-normal text-blue-700 anyfine:hover:underline"
+					class="border-r border-gray-400 px-3 font-normal text-blue-700 anyfine:hover:underline"
 					><a href="/rmnz/docs/ijmes-full.pdf">IJMES</a></th
 				>
 				<th
-					class="px-3 border-r border-gray-400 font-normal text-blue-700 anyfine:hover:underline"
+					class="border-r border-gray-400 px-3 font-normal text-blue-700 anyfine:hover:underline"
 					><a href="/rmnz/ijmes-d">IJMES-D</a></th
 				>
-				<th class="px-3 border-r border-gray-400 font-normal">IS</th>
+				<th class="border-r border-gray-400 px-3 font-normal">IS</th>
 				<th class="px-3 font-normal text-blue-700 anyfine:hover:underline"
 					><a href="/rmnz/docs/loc.pdf">LOC</a></th
 				>
@@ -110,14 +110,14 @@
 				<tr>
 					<td
 						lang="ar"
-						class="px-3 py-2 text-2xl border-r border-gray-400 font-persian text-center"
+						class="border-r border-gray-400 px-3 py-2 text-center font-persian text-2xl"
 						>{orig}</td
 					>
-					<td class="px-3 border-r border-gray-400">{roms.dmg}</td>
-					<td class="px-3 border-r border-gray-400">{roms.eir}</td>
-					<td class="px-3 border-r border-gray-400">{roms.ijmes}</td>
-					<td class="px-3 border-r border-gray-400">{roms.ijmesD}</td>
-					<td class="px-3 border-r border-gray-400">{roms.is}</td>
+					<td class="border-r border-gray-400 px-3">{roms.dmg}</td>
+					<td class="border-r border-gray-400 px-3">{roms.eir}</td>
+					<td class="border-r border-gray-400 px-3">{roms.ijmes}</td>
+					<td class="border-r border-gray-400 px-3">{roms.ijmesD}</td>
+					<td class="border-r border-gray-400 px-3">{roms.is}</td>
 					<td class="px-3">{roms.loc}</td>
 				</tr>
 			{/each}

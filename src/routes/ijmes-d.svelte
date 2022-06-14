@@ -7,7 +7,7 @@
 	<title>“IJMES-D”: Romanizing Afghan Persian</title>
 </svelte:head>
 
-<div class="max-w-3xl mx-auto text-lg">
+<div class="mx-auto max-w-3xl text-lg">
 	<p class="mb-3">
 		<a href="/rmnz" class="text-blue-700 anyfine:hover:underline">Back home</a>
 	</p>
