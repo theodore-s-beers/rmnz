@@ -4,6 +4,7 @@
 		eir: string;
 		ijmes: string;
 		ijmesD: string;
+		is: string;
 		loc: string;
 	}
 
