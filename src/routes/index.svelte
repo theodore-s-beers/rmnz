@@ -98,7 +98,10 @@
 					class="border-r border-gray-400 px-3 font-normal text-blue-700 anyfine:hover:underline"
 					><a href="/rmnz/ijmes-d">IJMES-D</a></th
 				>
-				<th class="border-r border-gray-400 px-3 font-normal">IS</th>
+				<th
+					class="border-r border-gray-400 px-3 font-normal text-blue-700 anyfine:hover:underline"
+					><a href="/rmnz/docs/is.pdf">IS</a></th
+				>
 				<th class="px-3 font-normal text-blue-700 anyfine:hover:underline"
 					><a href="/rmnz/docs/loc.pdf">LOC</a></th
 				>
