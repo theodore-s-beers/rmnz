@@ -49,8 +49,8 @@
 
 <div class:hidden={!loaded}>
 	<p class="mb-3 text-lg">
-		In total, there are <code class="text-rose-700">{words.length}</code> words so far. You
-		can search for specific patterns below.
+		In total, there are <code class="text-rose-700">{words.length}</code> words so far. You can search
+		for specific patterns below.
 	</p>
 
 	<img
@@ -72,9 +72,12 @@
 			alt="Cancel search"
 			height="20"
 			width="20"
-			class="absolute -mt-4 -ml-7"
+			class="absolute -ml-7 -mt-4"
 			class:hidden={!searchActive}
 			on:click={clearSearch}
+			on:keydown={(e) => {
+				if (e.key === 'Enter') clearSearch();
+			}}
 		/></button
 	>
 
@@ -82,24 +85,19 @@
 		<thead class="bg-blue-300/25 text-xl">
 			<tr>
 				<th class="border-r border-gray-400 px-3 py-2 font-normal">Orig.</th>
-				<th
-					class="border-r border-gray-400 px-3 font-normal text-blue-700 anyfine:hover:underline"
+				<th class="border-r border-gray-400 px-3 font-normal text-blue-700 anyfine:hover:underline"
 					><a href="/rmnz/docs/dmg.pdf">DMG</a></th
 				>
-				<th
-					class="border-r border-gray-400 px-3 font-normal text-blue-700 anyfine:hover:underline"
+				<th class="border-r border-gray-400 px-3 font-normal text-blue-700 anyfine:hover:underline"
 					><a href="/rmnz/docs/eir.pdf">EIr</a></th
 				>
-				<th
-					class="border-r border-gray-400 px-3 font-normal text-blue-700 anyfine:hover:underline"
+				<th class="border-r border-gray-400 px-3 font-normal text-blue-700 anyfine:hover:underline"
 					><a href="/rmnz/docs/ijmes-full.pdf">IJMES</a></th
 				>
-				<th
-					class="border-r border-gray-400 px-3 font-normal text-blue-700 anyfine:hover:underline"
+				<th class="border-r border-gray-400 px-3 font-normal text-blue-700 anyfine:hover:underline"
 					><a href="/rmnz/ijmes-d">IJMES-D</a></th
 				>
-				<th
-					class="border-r border-gray-400 px-3 font-normal text-blue-700 anyfine:hover:underline"
+				<th class="border-r border-gray-400 px-3 font-normal text-blue-700 anyfine:hover:underline"
 					><a href="/rmnz/docs/is.pdf">IS</a></th
 				>
 				<th class="px-3 font-normal text-blue-700 anyfine:hover:underline"
@@ -111,9 +109,7 @@
 		<tbody class="divide-y divide-gray-400">
 			{#each selectedWords as [orig, roms]}
 				<tr>
-					<td
-						lang="ar"
-						class="border-r border-gray-400 px-3 py-2 text-center font-persian text-2xl"
+					<td lang="ar" class="border-r border-gray-400 px-3 py-2 text-center font-persian text-2xl"
 						>{orig}</td
 					>
 					<td class="border-r border-gray-400 px-3">{roms.dmg}</td>
