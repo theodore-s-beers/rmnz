@@ -11,14 +11,16 @@
 		/>
 		<meta property="og:image" content="https://www.theobeers.com/rmnz/og.png" />
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta http-equiv="content-security-policy" content=""><title>Persian romanization examples</title><meta name="description" content="Examples of Persian words, romanized according to different standards" data-svelte="svelte-1oeam4c"><meta name="twitter:title" content="Persian romanization examples" data-svelte="svelte-1oeam4c">
-	<link rel="stylesheet" href="/rmnz/_app/immutable/assets/pages/__layout.svelte-93e2ff6f.css">
-	<link rel="modulepreload" href="/rmnz/_app/immutable/start-6f6b812c.js">
-	<link rel="modulepreload" href="/rmnz/_app/immutable/chunks/index-3f3af9b4.js">
-	<link rel="modulepreload" href="/rmnz/_app/immutable/pages/__layout.svelte-3a94855d.js">
-	<link rel="modulepreload" href="/rmnz/_app/immutable/pages/index.svelte-fa82ca2f.js">
+		
+		<link href="./_app/immutable/assets/0.aca7ef10.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.2b25404d.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.7a91ede7.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.d8e1d3d3.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.d479dd81.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.fc38757d.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.17c2e894.js"><title>Persian romanization examples</title><!-- HEAD_svelte-1oeam4c_START --><meta name="description" content="Examples of Persian words, romanized according to different standards"><meta name="twitter:title" content="Persian romanization examples"><!-- HEAD_svelte-1oeam4c_END -->
 	</head>
-	<body class="mx-auto mt-4 mb-6 max-w-4xl bg-gray-50 px-4 font-gentium">
+	<body class="mx-auto mb-6 mt-4 max-w-4xl bg-gray-50 px-4 font-gentium">
 		<div>
 
 
@@ -28,11 +30,11 @@
 
 <p class="mb-4 text-lg"><em>Loading words…</em></p>
 
-<div class="hidden"><p class="mb-3 text-lg">In total, there are <code class="text-rose-700">0</code> words so far. You
-		can search for specific patterns below.
+<div class="hidden"><p class="mb-3 text-lg">In total, there are <code class="text-rose-700">0</code> words so far. You can search
+		for specific patterns below.
 	</p>
 
-	<img src="/rmnz/search-icon.svg" alt="Magnifying glass icon" height="20" width="20" class="pointer-events-none absolute ml-2.5 mt-2.5"><input id="search-box" class="mb-6 w-80 rounded border border-solid border-gray-400 py-1 pl-9 pr-8 text-lg placeholder-gray-500" placeholder="Search words"  value=""><button><img src="/rmnz/cancel.svg" alt="Cancel search" height="20" width="20" class="absolute -mt-4 -ml-7 hidden"></button>
+	<img src="/rmnz/search-icon.svg" alt="Magnifying glass icon" height="20" width="20" class="pointer-events-none absolute ml-2.5 mt-2.5"><input id="search-box" class="mb-6 w-80 rounded border border-solid border-gray-400 py-1 pl-9 pr-8 text-lg placeholder-gray-500" placeholder="Search words"  value=""><button><img src="/rmnz/cancel.svg" alt="Cancel search" height="20" width="20" class="absolute -ml-7 -mt-4 hidden"></button>
 
 	<table class="table-auto divide-y-2 divide-gray-400 text-lg"><thead class="bg-blue-300/25 text-xl"><tr><th class="border-r border-gray-400 px-3 py-2 font-normal">Orig.</th>
 				<th class="border-r border-gray-400 px-3 font-normal text-blue-700 anyfine:hover:underline"><a href="/rmnz/docs/dmg.pdf">DMG</a></th>
@@ -45,23 +47,32 @@
 		<tbody class="divide-y divide-gray-400"></tbody></table></div>
 
 
-		<script type="module" data-sveltekit-hydrate="6j5zqb">
-		import { start } from "/rmnz/_app/immutable/start-6f6b812c.js";
-		start({
-			target: document.querySelector('[data-sveltekit-hydrate="6j5zqb"]').parentNode,
-			paths: {"base":"/rmnz","assets":"/rmnz"},
-			session: {},
-			route: true,
-			spa: false,
-			trailing_slash: "never",
-			hydrate: {
-				status: 200,
-				error: null,
-				nodes: [0, 3],
-				params: {},
-				routeId: ""
-			}
-		});
-	</script></div>
+			
+			<script>
+				{
+					__sveltekit_78psoj = {
+						assets: "/rmnz",
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.2b25404d.js"),
+						import("./_app/immutable/entry/app.d479dd81.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
 	</body>
 </html>
