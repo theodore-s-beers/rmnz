@@ -67,6 +67,10 @@
 		on:keydown={handleSearch}
 		readonly={searchActive}
 	/><button
+		on:click={clearSearch}
+		on:keydown={(e) => {
+			if (e.key === 'Enter') clearSearch();
+		}}
 		><img
 			src="/rmnz/cancel.svg"
 			alt="Cancel search"
@@ -74,10 +78,6 @@
 			width="20"
 			class="absolute -ml-7 -mt-4"
 			class:hidden={!searchActive}
-			on:click={clearSearch}
-			on:keydown={(e) => {
-				if (e.key === 'Enter') clearSearch();
-			}}
 		/></button
 	>
 
