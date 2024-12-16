@@ -38,7 +38,7 @@
 			>.” (NB: Different adjustments would be needed for Tajik Persian.) The changes involved are
 			few but impactful. They are as follows:
 		</p>
-		<ul class="list-disc">
+		<ul class="list-inside list-disc lg:list-outside">
 			<li>
 				Consonantal<span class="mx-1.5">و</span>becomes
 				<em class="text-green-800">w</em>, not <em>v</em>.
