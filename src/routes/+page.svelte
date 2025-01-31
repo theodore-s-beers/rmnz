@@ -85,23 +85,23 @@
 		<thead class="bg-blue-300/25 text-xl">
 			<tr>
 				<th class="border-r border-gray-400 px-3 py-2 font-normal">Orig.</th>
-				<th class="border-r border-gray-400 px-3 font-normal text-blue-700 hover:underline"
-					><a href="/rmnz/docs/dmg.pdf">DMG</a></th
+				<th class="border-r border-gray-400 px-3 font-normal text-blue-700"
+					><a href="/rmnz/docs/dmg.pdf" class="hover:underline">DMG</a></th
 				>
-				<th class="border-r border-gray-400 px-3 font-normal text-blue-700 hover:underline"
-					><a href="/rmnz/docs/eir.pdf">EIr</a></th
+				<th class="border-r border-gray-400 px-3 font-normal text-blue-700"
+					><a href="/rmnz/docs/eir.pdf" class="hover:underline">EIr</a></th
 				>
-				<th class="border-r border-gray-400 px-3 font-normal text-blue-700 hover:underline"
-					><a href="/rmnz/docs/ijmes-full.pdf">IJMES</a></th
+				<th class="border-r border-gray-400 px-3 font-normal text-blue-700"
+					><a href="/rmnz/docs/ijmes-full.pdf" class="hover:underline">IJMES</a></th
 				>
-				<th class="border-r border-gray-400 px-3 font-normal text-blue-700 hover:underline"
-					><a href="/rmnz/ijmes-d">IJMES-D</a></th
+				<th class="border-r border-gray-400 px-3 font-normal text-blue-700"
+					><a href="/rmnz/ijmes-d" class="hover:underline">IJMES-D</a></th
 				>
-				<th class="border-r border-gray-400 px-3 font-normal text-blue-700 hover:underline"
-					><a href="/rmnz/docs/is.pdf">IS</a></th
+				<th class="border-r border-gray-400 px-3 font-normal text-blue-700"
+					><a href="/rmnz/docs/is.pdf" class="hover:underline">IS</a></th
 				>
-				<th class="px-3 font-normal text-blue-700 hover:underline"
-					><a href="/rmnz/docs/loc.pdf">LOC</a></th
+				<th class="px-3 font-normal text-blue-700"
+					><a href="/rmnz/docs/loc.pdf" class="hover:underline">LOC</a></th
 				>
 			</tr>
 		</thead>
