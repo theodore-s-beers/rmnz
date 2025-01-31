@@ -1,15 +1,15 @@
 <script lang="ts">
 	import { onMount } from "svelte";
-	import { searchWords } from "$lib/search.svelte";
-	import type { Romanizations, WordsObject } from "$lib/types.svelte";
+	import { searchWords } from "$lib/search";
+	import type { Romanizations, WordsObject } from "$lib/types";
 
-	let words: [string, Romanizations][] = [];
-	let selectedWords: [string, Romanizations][] = [];
+	let words: [string, Romanizations][] = $state([]);
+	let selectedWords: [string, Romanizations][] = $state([]);
 
-	let loaded = false;
+	let loaded = $state(false);
 
-	let searchTerm = "";
-	let searchActive = false;
+	let searchTerm = $state("");
+	let searchActive = $state(false);
 
 	function handleSearch(event: KeyboardEvent) {
 		if (event.key === "Enter") {
@@ -61,14 +61,14 @@
 		class="pointer-events-none absolute mt-2.5 ml-2.5"
 	/><input
 		id="search-box"
-		class="mb-6 w-80 rounded border border-solid border-gray-400 py-1 pr-8 pl-9 text-lg placeholder-gray-500"
+		class="mb-6 w-80 rounded border border-solid border-gray-400 bg-white py-1 pr-8 pl-9 text-lg placeholder-gray-500"
 		placeholder="Search words"
 		bind:value={searchTerm}
-		on:keydown={handleSearch}
+		onkeydown={handleSearch}
 		readonly={searchActive}
 	/><button
-		on:click={clearSearch}
-		on:keydown={(e) => {
+		onclick={clearSearch}
+		onkeydown={(e) => {
 			if (e.key === "Enter") clearSearch();
 		}}
 		><img
@@ -76,7 +76,7 @@
 			alt="Cancel search"
 			height="20"
 			width="20"
-			class="absolute -mt-4 -ml-7"
+			class="absolute -mt-4 -ml-7 cursor-pointer"
 			class:hidden={!searchActive}
 		/></button
 	>
