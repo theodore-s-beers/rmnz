@@ -1,5 +1,5 @@
-import staticAdapter from '@sveltejs/adapter-static';
-import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+import staticAdapter from "@sveltejs/adapter-static";
+import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -11,9 +11,9 @@ const config = {
 		adapter: staticAdapter(),
 
 		paths: {
-			base: '/rmnz'
-		}
-	}
+			base: "/rmnz",
+		},
+	},
 };
 
 export default config;

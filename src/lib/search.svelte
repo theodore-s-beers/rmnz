@@ -1,9 +1,9 @@
 <script lang="ts" context="module">
-	import type { Romanizations } from '$lib/types.svelte';
+	import type { Romanizations } from "$lib/types.svelte";
 
 	export function searchWords(
 		searchTerm: string,
-		words: [string, Romanizations][]
+		words: [string, Romanizations][],
 	): [string, Romanizations][] {
 		let selectedWords: [string, Romanizations][] = [];
 		const needle = searchTerm.trim().toLowerCase();

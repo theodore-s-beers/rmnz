@@ -1,25 +1,25 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-	import { searchWords } from '$lib/search.svelte';
-	import type { Romanizations, WordsObject } from '$lib/types.svelte';
+	import { onMount } from "svelte";
+	import { searchWords } from "$lib/search.svelte";
+	import type { Romanizations, WordsObject } from "$lib/types.svelte";
 
 	let words: [string, Romanizations][] = [];
 	let selectedWords: [string, Romanizations][] = [];
 
 	let loaded = false;
 
-	let searchTerm = '';
+	let searchTerm = "";
 	let searchActive = false;
 
 	function handleSearch(event: KeyboardEvent) {
-		if (event.key === 'Enter') {
+		if (event.key === "Enter") {
 			searchActive = true;
 			selectedWords = searchWords(searchTerm, words);
 		}
 	}
 
 	function clearSearch() {
-		searchTerm = '';
+		searchTerm = "";
 		searchActive = false;
 		selectedWords = words;
 	}
@@ -69,7 +69,7 @@
 	/><button
 		on:click={clearSearch}
 		on:keydown={(e) => {
-			if (e.key === 'Enter') clearSearch();
+			if (e.key === "Enter") clearSearch();
 		}}
 		><img
 			src="/rmnz/cancel.svg"

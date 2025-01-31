@@ -1,33 +1,33 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @layer base {
 	@font-face {
-		font-family: 'Gentium Plus';
+		font-family: "Gentium Plus";
 		font-style: normal;
 		font-weight: 400;
 		src:
-			local(''),
-			url('/rmnz/fonts/GentiumPlus-Regular.woff2') format('woff2'),
-			url('/rmnz/fonts/GentiumPlus-Regular.woff') format('woff');
+			local(""),
+			url("/rmnz/fonts/GentiumPlus-Regular.woff2") format("woff2"),
+			url("/rmnz/fonts/GentiumPlus-Regular.woff") format("woff");
 	}
 
 	@font-face {
-		font-family: 'Gentium Plus';
+		font-family: "Gentium Plus";
 		font-style: italic;
 		font-weight: 400;
 		src:
-			local(''),
-			url('/rmnz/fonts/GentiumPlus-Italic.woff2') format('woff2'),
-			url('/rmnz/fonts/GentiumPlus-Italic.woff') format('woff');
+			local(""),
+			url("/rmnz/fonts/GentiumPlus-Italic.woff2") format("woff2"),
+			url("/rmnz/fonts/GentiumPlus-Italic.woff") format("woff");
 	}
 
 	@font-face {
-		font-family: 'Gentium Plus';
+		font-family: "Gentium Plus";
 		font-style: normal;
 		font-weight: 700;
 		src:
-			local(''),
-			url('/rmnz/fonts/GentiumPlus-Bold.woff2') format('woff2'),
-			url('/rmnz/fonts/GentiumPlus-Bold.woff') format('woff');
+			local(""),
+			url("/rmnz/fonts/GentiumPlus-Bold.woff2") format("woff2"),
+			url("/rmnz/fonts/GentiumPlus-Bold.woff") format("woff");
 	}
 }
