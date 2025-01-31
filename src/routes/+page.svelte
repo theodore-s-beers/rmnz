@@ -58,10 +58,10 @@
 		alt="Magnifying glass icon"
 		height="20"
 		width="20"
-		class="pointer-events-none absolute ml-2.5 mt-2.5"
+		class="pointer-events-none absolute mt-2.5 ml-2.5"
 	/><input
 		id="search-box"
-		class="mb-6 w-80 rounded border border-solid border-gray-400 py-1 pl-9 pr-8 text-lg placeholder-gray-500"
+		class="mb-6 w-80 rounded border border-solid border-gray-400 py-1 pr-8 pl-9 text-lg placeholder-gray-500"
 		placeholder="Search words"
 		bind:value={searchTerm}
 		on:keydown={handleSearch}
@@ -76,7 +76,7 @@
 			alt="Cancel search"
 			height="20"
 			width="20"
-			class="absolute -ml-7 -mt-4"
+			class="absolute -mt-4 -ml-7"
 			class:hidden={!searchActive}
 		/></button
 	>
@@ -85,22 +85,22 @@
 		<thead class="bg-blue-300/25 text-xl">
 			<tr>
 				<th class="border-r border-gray-400 px-3 py-2 font-normal">Orig.</th>
-				<th class="border-r border-gray-400 px-3 font-normal text-blue-700 anyfine:hover:underline"
+				<th class="border-r border-gray-400 px-3 font-normal text-blue-700 hover:underline"
 					><a href="/rmnz/docs/dmg.pdf">DMG</a></th
 				>
-				<th class="border-r border-gray-400 px-3 font-normal text-blue-700 anyfine:hover:underline"
+				<th class="border-r border-gray-400 px-3 font-normal text-blue-700 hover:underline"
 					><a href="/rmnz/docs/eir.pdf">EIr</a></th
 				>
-				<th class="border-r border-gray-400 px-3 font-normal text-blue-700 anyfine:hover:underline"
+				<th class="border-r border-gray-400 px-3 font-normal text-blue-700 hover:underline"
 					><a href="/rmnz/docs/ijmes-full.pdf">IJMES</a></th
 				>
-				<th class="border-r border-gray-400 px-3 font-normal text-blue-700 anyfine:hover:underline"
+				<th class="border-r border-gray-400 px-3 font-normal text-blue-700 hover:underline"
 					><a href="/rmnz/ijmes-d">IJMES-D</a></th
 				>
-				<th class="border-r border-gray-400 px-3 font-normal text-blue-700 anyfine:hover:underline"
+				<th class="border-r border-gray-400 px-3 font-normal text-blue-700 hover:underline"
 					><a href="/rmnz/docs/is.pdf">IS</a></th
 				>
-				<th class="px-3 font-normal text-blue-700 anyfine:hover:underline"
+				<th class="px-3 font-normal text-blue-700 hover:underline"
 					><a href="/rmnz/docs/loc.pdf">LOC</a></th
 				>
 			</tr>
@@ -109,7 +109,7 @@
 		<tbody class="divide-y divide-gray-400">
 			{#each selectedWords as [orig, roms]}
 				<tr>
-					<td lang="ar" class="border-r border-gray-400 px-3 py-2 text-center font-persian text-2xl"
+					<td lang="ar" class="font-persian border-r border-gray-400 px-3 py-2 text-center text-2xl"
 						>{orig}</td
 					>
 					<td class="border-r border-gray-400 px-3">{roms.dmg}</td>

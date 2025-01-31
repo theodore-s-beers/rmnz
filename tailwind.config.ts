@@ -8,9 +8,6 @@ export default {
 			fontFamily: {
 				gentium: ['Gentium Plus', 'serif'],
 				persian: ['Scheherazade New', 'serif']
-			},
-			screens: {
-				anyfine: { raw: '(any-pointer: fine)' }
 			}
 		}
 	},

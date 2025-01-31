@@ -6,7 +6,7 @@
 
 <div class="mx-auto max-w-3xl text-lg">
 	<p class="mb-3">
-		<a href="/rmnz" class="text-blue-700 anyfine:hover:underline">Back home</a>
+		<a href="/rmnz" class="text-blue-700 hover:underline">Back home</a>
 	</p>
 
 	<div class="space-y-4">
@@ -14,18 +14,18 @@
 		<p>
 			The <a
 				href="https://www.cambridge.org/core/journals/international-journal-of-middle-east-studies"
-				class="text-blue-700 anyfine:hover:underline">IJMES</a
+				class="text-blue-700 hover:underline">IJMES</a
 			>
 			romanization standard (<a
 				href="/rmnz/docs/ijmes-full.pdf"
-				class="text-blue-700 anyfine:hover:underline">see guidelines</a
+				class="text-blue-700 hover:underline">see guidelines</a
 			>) is now dominant among anglophone scholars in Near Eastern&nbsp;/ Islamic Studies.
 			Persianists tend not to like it, but we use it nonetheless—or are compelled to do so—because
 			it’s well established. (Among the unfortunate aspects of IJMES Persian romanization is its
 			treatment of the
 			<a
 				href="https://sites.la.utexas.edu/persian_online_resources/phonology/silent-letters-silent-and-consonantal/"
-				class="text-blue-700 anyfine:hover:underline"><em>silent hāʾ</em></a
+				class="text-blue-700 hover:underline"><em>silent hāʾ</em></a
 			>
 			word ending, which is rendered <em>-ih</em>. This is insane. It seems to have resulted from a
 			desire to observe contradictory principles, leading to a result that pleases no one.)
@@ -34,7 +34,7 @@
 			In any case, we need to work with IJMES. It would be good to have a variation of the standard
 			for romanizing Afghan&nbsp;/ South Asian Persian, a.k.a. “<a
 				href="https://en.wikipedia.org/wiki/Dari"
-				class="text-blue-700 anyfine:hover:underline">Dari</a
+				class="text-blue-700 hover:underline">Dari</a
 			>.” (NB: Different adjustments would be needed for Tajik Persian.) The changes involved are
 			few but impactful. They are as follows:
 		</p>
@@ -52,7 +52,7 @@
 			<li>
 				The <a
 					href="https://en.wikipedia.org/wiki/Aimaq_dialect#Phonology"
-					class="text-blue-700 anyfine:hover:underline"><em>majhūl</em> vowels</a
+					class="text-blue-700 hover:underline"><em>majhūl</em> vowels</a
 				>—<em class="text-green-800">ē</em> in place of <em>ī</em>,
 				<em class="text-green-800">ō</em> in place of <em>ū</em>—are notated as appropriate. See,
 				for example, <em class="text-green-800">khurshēd</em>
