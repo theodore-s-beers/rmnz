@@ -107,7 +107,7 @@
 		</thead>
 
 		<tbody class="divide-y divide-gray-400">
-			{#each selectedWords as [orig, roms]}
+			{#each selectedWords as [orig, roms] (orig)}
 				<tr>
 					<td lang="ar" class="font-persian border-r border-gray-400 px-3 py-2 text-center text-2xl"
 						>{orig}</td
