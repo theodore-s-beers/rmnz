@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from "svelte";
+	import { asset, resolve } from "$app/paths";
 	import { searchWords } from "$lib/search";
 	import type { Romanizations, WordsObject } from "$lib/types";
 
@@ -85,33 +86,36 @@
 		<thead class="bg-blue-300/25 text-xl">
 			<tr>
 				<th class="border-r border-gray-400 px-3 py-2 font-normal">Orig.</th>
-				<th class="border-r border-gray-400 px-3 font-normal text-blue-700"
-					><a href="/rmnz/docs/dmg.pdf" class="hover:underline">DMG</a></th
-				>
-				<th class="border-r border-gray-400 px-3 font-normal text-blue-700"
-					><a href="/rmnz/docs/eir.pdf" class="hover:underline">EIr</a></th
-				>
-				<th class="border-r border-gray-400 px-3 font-normal text-blue-700"
-					><a href="/rmnz/docs/ijmes-full.pdf" class="hover:underline">IJMES</a></th
-				>
-				<th class="border-r border-gray-400 px-3 font-normal text-blue-700"
-					><a href="/rmnz/ijmes-d" class="hover:underline">IJMES-D</a></th
-				>
-				<th class="border-r border-gray-400 px-3 font-normal text-blue-700"
-					><a href="/rmnz/docs/is.pdf" class="hover:underline">IS</a></th
-				>
-				<th class="px-3 font-normal text-blue-700"
-					><a href="/rmnz/docs/loc.pdf" class="hover:underline">LOC</a></th
-				>
+				<th class="border-r border-gray-400 px-3 font-normal text-blue-700">
+					<a href={asset("/docs/dmg.pdf")} class="hover:underline">DMG</a>
+				</th>
+				<th class="border-r border-gray-400 px-3 font-normal text-blue-700">
+					<a href={asset("/docs/eir.pdf")} class="hover:underline">EIr</a>
+				</th>
+				<th class="border-r border-gray-400 px-3 font-normal text-blue-700">
+					<a href={asset("/docs/ijmes-full.pdf")} class="hover:underline">IJMES</a>
+				</th>
+				<th class="border-r border-gray-400 px-3 font-normal text-blue-700">
+					<a href={resolve("/ijmes-d/")} class="hover:underline">IJMES-D</a>
+				</th>
+				<th class="border-r border-gray-400 px-3 font-normal text-blue-700">
+					<a href={asset("/docs/is.pdf")} class="hover:underline">IS</a>
+				</th>
+				<th class="px-3 font-normal text-blue-700">
+					<a href={asset("/docs/loc.pdf")} class="hover:underline">LOC</a>
+				</th>
 			</tr>
 		</thead>
 
 		<tbody class="divide-y divide-gray-400">
 			{#each selectedWords as [orig, roms] (orig)}
 				<tr>
-					<td lang="ar" class="font-persian border-r border-gray-400 px-3 py-2 text-center text-2xl"
-						>{orig}</td
+					<td
+						lang="ar"
+						class="border-r border-gray-400 px-3 py-2 text-center font-persian text-2xl"
 					>
+						{orig}
+					</td>
 					<td class="border-r border-gray-400 px-3">{roms.dmg}</td>
 					<td class="border-r border-gray-400 px-3">{roms.eir}</td>
 					<td class="border-r border-gray-400 px-3">{roms.ijmes}</td>

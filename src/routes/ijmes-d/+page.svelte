@@ -1,3 +1,7 @@
+<script lang="ts">
+	import { asset, resolve } from "$app/paths";
+</script>
+
 <svelte:head>
 	<meta name="description" content="Details about a standard for romanizing Afghan Persian words" />
 	<meta name="twitter:title" content="“IJMES-D”: Romanizing Afghan Persian" />
@@ -6,7 +10,7 @@
 
 <div class="mx-auto max-w-3xl text-lg">
 	<p class="mb-3">
-		<a href="/rmnz" class="text-blue-700 hover:underline">Back home</a>
+		<a href={resolve("/")} class="text-blue-700 hover:underline">Back home</a>
 	</p>
 
 	<div class="space-y-4">
@@ -17,7 +21,7 @@
 				class="text-blue-700 hover:underline">IJMES</a
 			>
 			romanization standard (<a
-				href="/rmnz/docs/ijmes-full.pdf"
+				href={asset("/docs/ijmes-full.pdf")}
 				class="text-blue-700 hover:underline">see guidelines</a
 			>) is now dominant among anglophone scholars in Near Eastern&nbsp;/ Islamic Studies.
 			Persianists tend not to like it, but we use it nonetheless—or are compelled to do so—because
