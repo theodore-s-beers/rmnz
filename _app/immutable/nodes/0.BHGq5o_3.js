@@ -1,0 +1,1 @@
+import{J as e,K as t,M as n,_ as r,p as i,y as a}from"../chunks/CXkx6qP-.js";import"../chunks/DXLwiZ0H.js";var o=e({prerender:()=>!0,trailingSlash:()=>s}),s=`always`,c=a(`<div class="mx-auto mt-4 mb-6 max-w-4xl bg-gray-50 px-4 font-gentium"><!></div>`);function l(e,a){var o=c();i(n(o),()=>a.children),t(o),r(e,o)}export{l as component,o as universal};
