@@ -1,30 +1,30 @@
 import type { Romanizations } from "#lib/types.ts";
 
 export function searchWords(
-	searchTerm: string,
-	words: [string, Romanizations][],
+  searchTerm: string,
+  words: [string, Romanizations][],
 ): [string, Romanizations][] {
-	const selectedWords: [string, Romanizations][] = [];
-	const needle = searchTerm.trim().toLowerCase();
+  const selectedWords: [string, Romanizations][] = [];
+  const needle = searchTerm.trim().toLowerCase();
 
-	for (const word of words) {
-		const orig = word[0];
+  for (const word of words) {
+    const orig = word[0];
 
-		if (orig.includes(needle)) {
-			selectedWords.push(word);
-			continue;
-		}
+    if (orig.includes(needle)) {
+      selectedWords.push(word);
+      continue;
+    }
 
-		const roms = word[1];
-		const romValues: string[] = Object.values(roms);
+    const roms = word[1];
+    const romValues: string[] = Object.values(roms);
 
-		for (const romanization of romValues) {
-			if (romanization.includes(needle)) {
-				selectedWords.push(word);
-				break;
-			}
-		}
-	}
+    for (const romanization of romValues) {
+      if (romanization.includes(needle)) {
+        selectedWords.push(word);
+        break;
+      }
+    }
+  }
 
-	return selectedWords;
+  return selectedWords;
 }

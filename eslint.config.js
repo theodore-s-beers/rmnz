@@ -6,25 +6,25 @@ import globals from "globals";
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
-	js.configs.recommended,
-	...ts.configs.recommended,
-	...svelte.configs["flat/recommended"],
-	prettier,
-	...svelte.configs["flat/prettier"],
-	{
-		languageOptions: {
-			globals: {
-				...globals.browser,
-				...globals.node,
-			},
-		},
-	},
-	{
-		files: ["**/*.svelte"],
-		languageOptions: {
-			parserOptions: { parser: ts.parser },
-		},
-		rules: { "svelte/no-navigation-without-resolve": "warn" },
-	},
-	{ ignores: ["build/", ".svelte-kit/", "dist/"] },
+  js.configs.recommended,
+  ...ts.configs.recommended,
+  ...svelte.configs["flat/recommended"],
+  prettier,
+  ...svelte.configs["flat/prettier"],
+  {
+    languageOptions: {
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+      },
+    },
+  },
+  {
+    files: ["**/*.svelte"],
+    languageOptions: {
+      parserOptions: { parser: ts.parser },
+    },
+    rules: { "svelte/no-navigation-without-resolve": "warn" },
+  },
+  { ignores: ["build/", ".svelte-kit/", "dist/"] },
 ];

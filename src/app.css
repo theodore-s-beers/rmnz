@@ -1,38 +1,38 @@
 @import "tailwindcss";
 
 @theme {
-	--font-gentium: "Gentium Plus", serif;
-	--font-persian: "Scheherazade New", serif;
+  --font-gentium: "Gentium Plus", serif;
+  --font-persian: "Scheherazade New", serif;
 }
 
 @layer base {
-	@font-face {
-		font-family: "Gentium Plus";
-		font-style: normal;
-		font-weight: 400;
-		src:
-			local(""),
-			url("/fonts/GentiumPlus-Regular.woff2") format("woff2"),
-			url("/fonts/GentiumPlus-Regular.woff") format("woff");
-	}
+  @font-face {
+    font-family: "Gentium Plus";
+    font-style: normal;
+    font-weight: 400;
+    src:
+      local(""),
+      url("/fonts/GentiumPlus-Regular.woff2") format("woff2"),
+      url("/fonts/GentiumPlus-Regular.woff") format("woff");
+  }
 
-	@font-face {
-		font-family: "Gentium Plus";
-		font-style: italic;
-		font-weight: 400;
-		src:
-			local(""),
-			url("/fonts/GentiumPlus-Italic.woff2") format("woff2"),
-			url("/fonts/GentiumPlus-Italic.woff") format("woff");
-	}
+  @font-face {
+    font-family: "Gentium Plus";
+    font-style: italic;
+    font-weight: 400;
+    src:
+      local(""),
+      url("/fonts/GentiumPlus-Italic.woff2") format("woff2"),
+      url("/fonts/GentiumPlus-Italic.woff") format("woff");
+  }
 
-	@font-face {
-		font-family: "Gentium Plus";
-		font-style: normal;
-		font-weight: 700;
-		src:
-			local(""),
-			url("/fonts/GentiumPlus-Bold.woff2") format("woff2"),
-			url("/fonts/GentiumPlus-Bold.woff") format("woff");
-	}
+  @font-face {
+    font-family: "Gentium Plus";
+    font-style: normal;
+    font-weight: 700;
+    src:
+      local(""),
+      url("/fonts/GentiumPlus-Bold.woff2") format("woff2"),
+      url("/fonts/GentiumPlus-Bold.woff") format("woff");
+  }
 }

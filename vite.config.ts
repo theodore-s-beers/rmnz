@@ -5,12 +5,12 @@ import { defineConfig } from "vite";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-	plugins: [
-		sveltekit({
-			preprocess: vitePreprocess(),
-			adapter: staticAdapter(),
-			paths: { base: "/rmnz" },
-		}),
-		tailwindcss(),
-	],
+  plugins: [
+    sveltekit({
+      preprocess: vitePreprocess(),
+      adapter: staticAdapter(),
+      paths: { base: "/rmnz" },
+    }),
+    tailwindcss(),
+  ],
 });
