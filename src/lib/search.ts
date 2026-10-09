@@ -1,4 +1,4 @@
-import type { Romanizations } from "$lib/types";
+import type { Romanizations } from "#lib/types.ts";
 
 export function searchWords(
 	searchTerm: string,

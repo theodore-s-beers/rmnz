@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { onMount } from "svelte";
 	import { asset, resolve } from "$app/paths";
-	import { searchWords } from "$lib/search";
-	import type { Romanizations, WordsObject } from "$lib/types";
+	import { searchWords } from "#lib/search.ts";
+	import type { Romanizations, WordsObject } from "#lib/types.ts";
 
 	let words: [string, Romanizations][] = $state([]);
 	let selectedWords: [string, Romanizations][] = $state([]);
@@ -87,22 +87,22 @@
 			<tr>
 				<th class="border-r border-gray-400 px-3 py-2 font-normal">Orig.</th>
 				<th class="border-r border-gray-400 px-3 font-normal text-blue-700">
-					<a href={asset("/docs/dmg.pdf")} class="hover:underline">DMG</a>
+					<a href={asset("docs/dmg.pdf")} class="hover:underline">DMG</a>
 				</th>
 				<th class="border-r border-gray-400 px-3 font-normal text-blue-700">
-					<a href={asset("/docs/eir.pdf")} class="hover:underline">EIr</a>
+					<a href={asset("docs/eir.pdf")} class="hover:underline">EIr</a>
 				</th>
 				<th class="border-r border-gray-400 px-3 font-normal text-blue-700">
-					<a href={asset("/docs/ijmes-full.pdf")} class="hover:underline">IJMES</a>
+					<a href={asset("docs/ijmes-full.pdf")} class="hover:underline">IJMES</a>
 				</th>
 				<th class="border-r border-gray-400 px-3 font-normal text-blue-700">
-					<a href={resolve("/ijmes-d/")} class="hover:underline">IJMES-D</a>
+					<a href={resolve("/ijmes-d")} class="hover:underline">IJMES-D</a>
 				</th>
 				<th class="border-r border-gray-400 px-3 font-normal text-blue-700">
-					<a href={asset("/docs/is.pdf")} class="hover:underline">IS</a>
+					<a href={asset("docs/is.pdf")} class="hover:underline">IS</a>
 				</th>
 				<th class="px-3 font-normal text-blue-700">
-					<a href={asset("/docs/loc.pdf")} class="hover:underline">LOC</a>
+					<a href={asset("docs/loc.pdf")} class="hover:underline">LOC</a>
 				</th>
 			</tr>
 		</thead>

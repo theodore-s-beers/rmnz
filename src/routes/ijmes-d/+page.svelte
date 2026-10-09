@@ -21,7 +21,7 @@
 				class="text-blue-700 hover:underline">IJMES</a
 			>
 			romanization standard (<a
-				href={asset("/docs/ijmes-full.pdf")}
+				href={asset("docs/ijmes-full.pdf")}
 				class="text-blue-700 hover:underline">see guidelines</a
 			>) is now dominant among anglophone scholars in Near Eastern&nbsp;/ Islamic Studies.
 			Persianists tend not to like it, but we use it nonetheless—or are compelled to do so—because
