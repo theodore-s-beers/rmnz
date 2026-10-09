@@ -26,7 +26,7 @@
 	}
 
 	onMount(async () => {
-		const res = await fetch(`/rmnz/words.json`);
+		const res = await fetch(asset("words.json"));
 		const parsed: WordsObject = await res.json();
 
 		words = Object.entries(parsed);
@@ -55,7 +55,7 @@
 	</p>
 
 	<img
-		src="/rmnz/search-icon.svg"
+		src={asset("search-icon.svg")}
 		alt="Magnifying glass icon"
 		height="20"
 		width="20"
@@ -73,7 +73,7 @@
 			if (e.key === "Enter") clearSearch();
 		}}
 		><img
-			src="/rmnz/cancel.svg"
+			src={asset("cancel.svg")}
 			alt="Cancel search"
 			height="20"
 			width="20"
